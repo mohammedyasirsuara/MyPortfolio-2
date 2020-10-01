@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+    background: rgb(10, 25, 47);
+}
+
+/*nav-bar styling*/
+
+.start {
+    color: rgb(214, 226, 44);
+    font-size: 50px;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(78, 82, 23);
+}
+
+.navbar-brand {
+    padding-left: 7rem;
+}
+
+nav ul {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.nav-link, #about, #port {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: whitesmoke;
+}
+
+.navbar-nav {
+    padding-right: 10rem;
+}
+
+#about {
+    padding-left: 20px;
+}
+
+/* */
+
+.intro h3 {
+    padding-top: 30%;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.intro h1 {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.intro h4 {
+    color: whitesmoke;
+}
+
+.myImage img {
+    padding: 5rem 0;
+    width: 90rem;
+    opacity: 0.6
+}
+
+/*Buttons*/
+
+.btn-secondary {
+    padding: .5rem 2.2rem;
+    position: relative;
+    border: 4px solid transparent;
+    font: normal 500;
+    background: white;
+    color: black;
+}
+
+.btn-secondary {
+    border-color: rgb(214, 226, 44);
+    background: rgb(10, 25, 47);
+    color: rgb(214, 226, 44);
+    border: 2px solid;
+}
+
+.btn-secondary:hover {
+    color: rgb(214, 226, 44);
+    background: rgb(10, 25, 47);
+    border-color: rgb(214, 226, 44);
+}
+
+.btn-secondary::after {
+    border-color: rgb(214, 226, 44);
+    background: rgb(10, 25, 47);
+    color: rgb(214, 226, 44);
+    border: 2px solid;
+}
+
+/*About Me*/
+
+#aboutMe {
+    padding: 8rem 5rem;
+}
+
+.title-about h2>span {
+    font: normal bold 49px/60px;
+    color: whitesmoke;
+}
+
+#para, #para2 {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(136, 146, 176);
+}
+
+#para2 span>a {
+    color: rgb(214, 226, 44);
+}
+
+#list ul>li {
+    color: rgb(136, 146, 176);
+    margin: 0px 0px 10px;
+    padding: 0px 0px 0px 20px;
+}
+
+#list ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 50px;
+    -moz-column-fill: auto;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 50px;
+    -webkit-column-fill: auto;
+    column-count: 2;
+    column-gap: 50px;
+    column-fill: auto;
+    list-style-position: inside;
+    list-style: none;
+    position: absolute;
+}
+
+#list ul>li::before {
+    content: "▹";
+    color: rgb(214, 226, 44);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/*footer*/
+
+footer {
+    position: absolute;
+    height: 100px;
+    width: 80%;
+    padding-top: 3rem;
+    border-top: 1px solid;
+    text-align: center;
+    margin: 7rem auto;
+    left: 0;
+    right: 0;
+}
+
+#writing, #email {
+    font-size: 1rem;
+    color: grey;
+    line-height: 1.4rem;
+}
+
+/*Portfolio Section*/
+
+.h1-title {
+    color: whitesmoke;
+}
+
+.fa-github, .fa-external-link-alt, .fa-linkedin {
+    color: rgb(204, 214, 246);
+    font-size: 1.5em;
+}
+
+.fa-github:hover, .fa-external-link-alt:hover, .fa-linkedin:hover {
+    color: rgb(214, 226, 44);
+}
+
+.fa-github::after, .fa-external-link-alt::after, .fa-linkedin::after {
+    color: rgb(214, 226, 44);
+}
+
+#proj-Title {
+    color: rgb(204, 214, 246);
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#proj-des {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.random {
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    position: relative;
+    background-color: rgb(23, 42, 69);
+    color: rgb(168, 178, 209);
+    font-size: 18px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    padding: 25px;
+    border-radius: 3px;
+    display: block;
+}
+
+.info ul>li {
+    color: rgb(168, 178, 209);
+    display: inline;
+}
+
+#proj-image {
+    height: 300px;
+    transition: opacity 0.5s;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    border-left: 50px;
+}
+
+#proj-image:hover {
+    mix-blend-mode: normal;
+    opacity: 1;
+}
+
+.image {
+    background-color: rgb(10, 25, 47);
+}
+
+.h1-title {
+    font: normal bold 49px/60px;
+    color: whitesmoke;
+}
+
+#portfolio {
+    padding-top: 5em;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 767.98px) {
+    #aboutMe {
+        padding: 8rem 0rem;
+        padding-top: 25px;
+    }
+    #proj-image {
+        height: 200px;
+    }
+    .title-about {
+        padding-top: 0em!important;
+    }
+    .title-about h2 {
+        padding-top: 0em!important;
+    }
+}
